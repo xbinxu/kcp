@@ -10,10 +10,11 @@ documentation = "https://docs.rs/kcp"
 repository = "https://github.com/Matrix-Zhang/kcp"
 
 [dependencies]
-bytes = "0.4"
-log = "0.3"
+byteorder = "1.3"
+bytes = "0.5"
+log = "0.4"
 
 [dev-dependencies]
-time = "0.1"
-rand = "0.3"
-env_logger = "0.4"
+time = "0.2"
+rand = "0.7"
+env_logger = "0.7"

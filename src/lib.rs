@@ -2,6 +2,7 @@
 //!
 //! A Fast and Reliable ARQ Protocol
 
+extern crate byteorder;
 extern crate bytes;
 #[macro_use]
 extern crate log;
@@ -11,11 +12,11 @@ mod kcp;
 
 /// The `KCP` prelude
 pub mod prelude {
-    pub use super::{Kcp, get_conv};
+  pub use super::{get_conv, Kcp};
 }
 
 pub use error::Error;
-pub use kcp::{Kcp, get_conv, set_conv};
+pub use kcp::{get_conv, set_conv, Kcp};
 
 /// KCP result
 pub type KcpResult<T> = Result<T, Error>;
