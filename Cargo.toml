@@ -8,6 +8,8 @@ readme = "README.md"
 keywords = ["kcp", "udp", "reliable"]
 documentation = "https://docs.rs/kcp"
 repository = "https://github.com/Matrix-Zhang/kcp"
+edition = "2018"
+
 
 [dependencies]
 byteorder = "1.3"

@@ -8,7 +8,8 @@ extern crate bytes;
 extern crate log;
 
 mod error;
-mod kcp;
+mod proto;
+mod shared;
 
 /// The `KCP` prelude
 pub mod prelude {
@@ -16,7 +17,7 @@ pub mod prelude {
 }
 
 pub use error::Error;
-pub use kcp::{get_conv, set_conv, Kcp};
+pub use proto::{get_conv, set_conv, Kcp};
 
 /// KCP result
 pub type KcpResult<T> = Result<T, Error>;

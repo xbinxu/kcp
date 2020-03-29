@@ -4,10 +4,10 @@ use std::cmp;
 use std::collections::VecDeque;
 use std::io::{self, Cursor, Read, Write};
 
+use crate::error::Error;
+use crate::KcpResult;
 use byteorder::{ByteOrder, LittleEndian};
 use bytes::{Buf, BufMut, BytesMut};
-use error::Error;
-use KcpResult;
 
 const KCP_RTO_NDL: u32 = 30;
 const KCP_RTO_MIN: u32 = 100;
